@@ -1,0 +1,36 @@
+{
+  "name": "checkid",
+  "version": "1.0.0",
+  "description": "Checksum utility for node",
+  "main": "dist/checkid.js",
+  "module": "dist/checkid.esm.js",
+  "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-runtime": "^6.26.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-cleanup": "^2.0.0",
+    "rollup-worker": "^1.0.1"
+  },
+  "scripts": {
+    "build": "npm run lint:fix && rollup-bundle --config .fssrc.js",
+    "prepare": "npm run build",
+    "lint:fix": "standard --fix",
+    "lint": "standard",
+    "test": "npm run lint && npm run test:node"
+  },
+  "standard": {
+    "ignore": [
+      "test"
+    ]
+  },
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT"
+}
