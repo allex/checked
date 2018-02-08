@@ -5,6 +5,10 @@
   "main": "dist/checkid.js",
   "module": "dist/checkid.esm.js",
   "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allex/checkid.git"
+  },
   "dependencies": {
   },
   "devDependencies": {
